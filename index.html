@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            top: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        .row {
+            position: absolute;
+            width: 1456px;
+        }
+
+        .square {
+            position: absolute;
+
+            border: solid 1px black;
+        }
+
+        .square:hover {
+            z-index: 1;
+
+            border: solid 2px black;
+            outline: solid 1px white;
+        }
+
+        .info {
+            color: black;
+            position: absolute;
+            background-color: white;
+            font-family: monospace;
+            z-index: 2;
+            border-radius: 8px;
+            height: 10px;
+
+            font-size: 8px;
+            width: 50px;
+
+            pointer-events: none;
+            text-align: center;
+            border: solid 1px black;
+            outline: solid 1px white;
+        }
+    </style>
+    <script>
+        function onTileHovered(x, y) {
+            const pos = document.getElementById("pos");
+            pos.innerText = "[" + (x + 960) + ", " + (y + 174) + "]";
+            pos.style.left = x * 16 + 16 + "px";
+            pos.style.top = y * 16 + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="pos" , class="info"></div>
+
+    <div class="row" , style="top: 0px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=174&amp;px=20" onmouseover="onTileHovered(0, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=174&amp;px=20" onmouseover="onTileHovered(1, 0)"></a>
+        <a style="background-color: rgb(251, 255, 0);left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=174&amp;px=20" onmouseover="onTileHovered(2, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=174&amp;px=20" onmouseover="onTileHovered(3, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=174&amp;px=20" onmouseover="onTileHovered(4, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=174&amp;px=20" onmouseover="onTileHovered(5, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=174&amp;px=20" onmouseover="onTileHovered(6, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=174&amp;px=20" onmouseover="onTileHovered(7, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=174&amp;px=20" onmouseover="onTileHovered(8, 0)"></a>
+        <a style="background-color: brown;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=174&amp;px=20" onmouseover="onTileHovered(9, 0)"></a>
+        <a style="background-color: brown;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=174&amp;px=20" onmouseover="onTileHovered(10, 0)"></a>
+        <a style="background-color: brown;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=174&amp;px=20" onmouseover="onTileHovered(11, 0)"></a>
+        <a style="background-color: brown;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=174&amp;px=20" onmouseover="onTileHovered(12, 0)"></a>
+        <a style="background-color: brown;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=174&amp;px=20" onmouseover="onTileHovered(13, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=174&amp;px=20" onmouseover="onTileHovered(14, 0)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=174&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=174&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=174&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=174&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 16px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=175&amp;px=20" onmouseover="onTileHovered(0, 1)"></a>
+        <a style="background-color: brown;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=175&amp;px=20" onmouseover="onTileHovered(1, 1)"></a>
+        <a style="background-color: brown;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=175&amp;px=20" onmouseover="onTileHovered(2, 1)"></a>
+        <a style="background-color: brown;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=175&amp;px=20" onmouseover="onTileHovered(3, 1)"></a>
+        <a style="background-color: brown;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=175&amp;px=20" onmouseover="onTileHovered(4, 1)"></a>
+        <a style="background-color: brown;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=175&amp;px=20" onmouseover="onTileHovered(5, 1)"></a>
+        <a style="background-color: brown;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=175&amp;px=20" onmouseover="onTileHovered(6, 1)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=175&amp;px=20" onmouseover="onTileHovered(7, 1)"></a>
+        <a style="background-color: brown;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=175&amp;px=20" onmouseover="onTileHovered(8, 1)"></a>
+        <a style="background-color: orange;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=175&amp;px=20" onmouseover="onTileHovered(9, 1)"></a>
+        <a style="background-color: orange;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=175&amp;px=20" onmouseover="onTileHovered(10, 1)"></a>
+        <a style="background-color: orange;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=175&amp;px=20" onmouseover="onTileHovered(11, 1)"></a>
+        <a style="background-color: orange;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=175&amp;px=20" onmouseover="onTileHovered(12, 1)"></a>
+        <a style="background-color: brown;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=175&amp;px=20" onmouseover="onTileHovered(13, 1)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=175&amp;px=20" onmouseover="onTileHovered(14, 1)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=175&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=175&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=175&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=175&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 32px;">
+        <a style="background-color: brown;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=176&amp;px=20" onmouseover="onTileHovered(0, 2)"></a>
+        <a style="background-color: orange;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=176&amp;px=20" onmouseover="onTileHovered(1, 2)"></a>
+        <a style="background-color: orange;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=176&amp;px=20" onmouseover="onTileHovered(2, 2)"></a>
+        <a style="background-color: orange;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=176&amp;px=20" onmouseover="onTileHovered(3, 2)"></a>
+        <a style="background-color: orange;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=176&amp;px=20" onmouseover="onTileHovered(4, 2)"></a>
+        <a style="background-color: orange;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=176&amp;px=20" onmouseover="onTileHovered(5, 2)"></a>
+        <a style="background-color: orange;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=176&amp;px=20" onmouseover="onTileHovered(6, 2)"></a>
+        <a style="background-color: brown;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=176&amp;px=20" onmouseover="onTileHovered(7, 2)"></a>
+        <a style="background-color: orange;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=176&amp;px=20" onmouseover="onTileHovered(8, 2)"></a>
+        <a style="background-color: brown;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=176&amp;px=20" onmouseover="onTileHovered(9, 2)"></a>
+        <a style="background-color: orange;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=176&amp;px=20" onmouseover="onTileHovered(10, 2)"></a>
+        <a style="background-color: orange;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=176&amp;px=20" onmouseover="onTileHovered(11, 2)"></a>
+        <a style="background-color: orange;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=176&amp;px=20" onmouseover="onTileHovered(12, 2)"></a>
+        <a style="background-color: brown;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=176&amp;px=20" onmouseover="onTileHovered(13, 2)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=176&amp;px=20" onmouseover="onTileHovered(14, 2)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=176&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=176&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=176&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=176&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 48px;">
+        <a style="background-color: brown;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=177&amp;px=20" onmouseover="onTileHovered(0, 3)"></a>
+        <a style="background-color: brown;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=177&amp;px=20" onmouseover="onTileHovered(1, 3)"></a>
+        <a style="background-color: brown;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=177&amp;px=20" onmouseover="onTileHovered(2, 3)"></a>
+        <a style="background-color: brown;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=177&amp;px=20" onmouseover="onTileHovered(3, 3)"></a>
+        <a style="background-color: brown;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=177&amp;px=20" onmouseover="onTileHovered(4, 3)"></a>
+        <a style="background-color: brown;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=177&amp;px=20" onmouseover="onTileHovered(5, 3)"></a>
+        <a style="background-color: brown;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=177&amp;px=20" onmouseover="onTileHovered(6, 3)"></a>
+        <a style="background-color: brown;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=177&amp;px=20" onmouseover="onTileHovered(7, 3)"></a>
+        <a style="background-color: brown;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=177&amp;px=20" onmouseover="onTileHovered(8, 3)"></a>
+        <a style="background-color: orange;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=177&amp;px=20" onmouseover="onTileHovered(9, 3)"></a>
+        <a style="background-color: brown;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=177&amp;px=20" onmouseover="onTileHovered(10, 3)"></a>
+        <a style="background-color: brown;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=177&amp;px=20" onmouseover="onTileHovered(11, 3)"></a>
+        <a style="background-color: brown;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=177&amp;px=20" onmouseover="onTileHovered(12, 3)"></a>
+        <a style="background-color: brown;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=177&amp;px=20" onmouseover="onTileHovered(13, 3)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=177&amp;px=20" onmouseover="onTileHovered(14, 3)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=177&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=177&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=177&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=177&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 64px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=178&amp;px=20" onmouseover="onTileHovered(0, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=178&amp;px=20" onmouseover="onTileHovered(1, 4)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=178&amp;px=20" onmouseover="onTileHovered(2, 4)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=178&amp;px=20" onmouseover="onTileHovered(3, 4)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=178&amp;px=20" onmouseover="onTileHovered(4, 4)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=178&amp;px=20" onmouseover="onTileHovered(5, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=178&amp;px=20" onmouseover="onTileHovered(6, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=178&amp;px=20" onmouseover="onTileHovered(7, 4)"></a>
+        <a style="background-color: lime;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=178&amp;px=20" onmouseover="onTileHovered(8, 4)"></a>
+        <a style="background-color: lime;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=178&amp;px=20" onmouseover="onTileHovered(9, 4)"></a>
+        <a style="background-color: yellow;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=178&amp;px=20" onmouseover="onTileHovered(10, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=178&amp;px=20" onmouseover="onTileHovered(11, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=178&amp;px=20" onmouseover="onTileHovered(12, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=178&amp;px=20" onmouseover="onTileHovered(13, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=178&amp;px=20" onmouseover="onTileHovered(14, 4)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=178&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=178&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=178&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=178&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 80px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=179&amp;px=20" onmouseover="onTileHovered(0, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=179&amp;px=20" onmouseover="onTileHovered(1, 5)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=179&amp;px=20" onmouseover="onTileHovered(2, 5)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=179&amp;px=20" onmouseover="onTileHovered(3, 5)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=179&amp;px=20" onmouseover="onTileHovered(4, 5)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=179&amp;px=20" onmouseover="onTileHovered(5, 5)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=179&amp;px=20" onmouseover="onTileHovered(6, 5)"></a>
+        <a style="background-color: yellow;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=179&amp;px=20" onmouseover="onTileHovered(7, 5)"></a>
+        <a style="background-color: lime;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=179&amp;px=20" onmouseover="onTileHovered(8, 5)"></a>
+        <a style="background-color: yellow;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=179&amp;px=20" onmouseover="onTileHovered(9, 5)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=179&amp;px=20" onmouseover="onTileHovered(10, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=179&amp;px=20" onmouseover="onTileHovered(11, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=179&amp;px=20" onmouseover="onTileHovered(12, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=179&amp;px=20" onmouseover="onTileHovered(13, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=179&amp;px=20" onmouseover="onTileHovered(14, 5)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=179&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=179&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=179&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=179&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 96px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=180&amp;px=20" onmouseover="onTileHovered(0, 6)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=180&amp;px=20" onmouseover="onTileHovered(1, 6)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=180&amp;px=20" onmouseover="onTileHovered(2, 6)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=180&amp;px=20" onmouseover="onTileHovered(3, 6)"></a>
+        <a style="background-color: white;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=180&amp;px=20" onmouseover="onTileHovered(4, 6)"></a>
+        <a style="background-color: pink;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=180&amp;px=20" onmouseover="onTileHovered(5, 6)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=180&amp;px=20" onmouseover="onTileHovered(6, 6)"></a>
+        <a style="background-color: lime;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=180&amp;px=20" onmouseover="onTileHovered(7, 6)"></a>
+        <a style="background-color: lime;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=180&amp;px=20" onmouseover="onTileHovered(8, 6)"></a>
+        <a style="background-color: lime;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=180&amp;px=20" onmouseover="onTileHovered(9, 6)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=180&amp;px=20" onmouseover="onTileHovered(10, 6)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=180&amp;px=20" onmouseover="onTileHovered(11, 6)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=180&amp;px=20" onmouseover="onTileHovered(12, 6)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=180&amp;px=20" onmouseover="onTileHovered(13, 6)"></a>
+        <a style="background-color: yellow;left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=180&amp;px=20" onmouseover="onTileHovered(14, 6)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=180&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=180&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=180&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=180&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 112px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=181&amp;px=20" onmouseover="onTileHovered(0, 7)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=181&amp;px=20" onmouseover="onTileHovered(1, 7)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=181&amp;px=20" onmouseover="onTileHovered(2, 7)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=181&amp;px=20" onmouseover="onTileHovered(3, 7)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=181&amp;px=20" onmouseover="onTileHovered(4, 7)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=181&amp;px=20" onmouseover="onTileHovered(5, 7)"></a>
+        <a style="background-color: yellow;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=181&amp;px=20" onmouseover="onTileHovered(6, 7)"></a>
+        <a style="background-color: lime;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=181&amp;px=20" onmouseover="onTileHovered(7, 7)"></a>
+        <a style="background-color: yellow;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=181&amp;px=20" onmouseover="onTileHovered(8, 7)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=181&amp;px=20" onmouseover="onTileHovered(9, 7)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=181&amp;px=20" onmouseover="onTileHovered(10, 7)"></a>
+        <a style="background-color: yellow;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=181&amp;px=20" onmouseover="onTileHovered(11, 7)"></a>
+        <a style="background-color: purple;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=181&amp;px=20" onmouseover="onTileHovered(12, 7)"></a>
+        <a style="background-color: purple;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=181&amp;px=20" onmouseover="onTileHovered(13, 7)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=181&amp;px=20" onmouseover="onTileHovered(14, 7)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=181&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=181&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=181&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=181&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 128px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=182&amp;px=20" onmouseover="onTileHovered(0, 8)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=182&amp;px=20" onmouseover="onTileHovered(1, 8)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=182&amp;px=20" onmouseover="onTileHovered(2, 8)"></a>
+        <a style="background-color: yellow;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=182&amp;px=20" onmouseover="onTileHovered(3, 8)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=182&amp;px=20" onmouseover="onTileHovered(4, 8)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=182&amp;px=20" onmouseover="onTileHovered(5, 8)"></a>
+        <a style="background-color: yellow;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=182&amp;px=20" onmouseover="onTileHovered(6, 8)"></a>
+        <a style="background-color: yellow;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=182&amp;px=20" onmouseover="onTileHovered(7, 8)"></a>
+        <a style="background-color: purple;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=182&amp;px=20" onmouseover="onTileHovered(8, 8)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=182&amp;px=20" onmouseover="onTileHovered(9, 8)"></a>
+        <a style="background-color: yellow;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=182&amp;px=20" onmouseover="onTileHovered(10, 8)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=182&amp;px=20" onmouseover="onTileHovered(11, 8)"></a>
+        <a style="background-color: purple;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=182&amp;px=20" onmouseover="onTileHovered(12, 8)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=182&amp;px=20" onmouseover="onTileHovered(13, 8)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=182&amp;px=20" onmouseover="onTileHovered(14, 8)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=182&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=182&amp;px=20" onmouseover="onTileHovered(14, 14)"></a> 
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=182&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=182&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+            
+    </div>
+    <div class="row" , style="top: 144px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=183&amp;px=20" onmouseover="onTileHovered(0, 9)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=183&amp;px=20" onmouseover="onTileHovered(1, 9)"></a>
+        <a style="background-color: yellow;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=183&amp;px=20" onmouseover="onTileHovered(2, 9)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=183&amp;px=20" onmouseover="onTileHovered(3, 9)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=183&amp;px=20" onmouseover="onTileHovered(4, 9)"></a>
+        <a style="background-color: yellow;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=183&amp;px=20" onmouseover="onTileHovered(5, 9)"></a>
+        <a style="background-color: purple;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=183&amp;px=20" onmouseover="onTileHovered(6, 9)"></a>
+        <a style="background-color: purple;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=183&amp;px=20" onmouseover="onTileHovered(7, 9)"></a>
+        <a style="background-color: yellow;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=183&amp;px=20" onmouseover="onTileHovered(8, 9)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=183&amp;px=20" onmouseover="onTileHovered(9, 9)"></a>
+        <a style="background-color: purple;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=183&amp;px=20" onmouseover="onTileHovered(10, 9)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=183&amp;px=20" onmouseover="onTileHovered(11, 9)"></a>
+        <a style="background-color: yellow;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=183&amp;px=20" onmouseover="onTileHovered(12, 9)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=183&amp;px=20" onmouseover="onTileHovered(13, 9)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=183&amp;px=20" onmouseover="onTileHovered(14, 9)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=183&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=183&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=183&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=183&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+            
+    </div>
+    <div class="row" , style="top: 160px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=184&amp;px=20" onmouseover="onTileHovered(0, 10)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=184&amp;px=20" onmouseover="onTileHovered(1, 10)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=184&amp;px=20" onmouseover="onTileHovered(2, 10)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=184&amp;px=20" onmouseover="onTileHovered(3, 10)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=184&amp;px=20" onmouseover="onTileHovered(4, 10)"></a>
+        <a style="background-color: brown;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=184&amp;px=20" onmouseover="onTileHovered(5, 10)"></a>
+        <a style="background-color: purple;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=184&amp;px=20" onmouseover="onTileHovered(6, 10)"></a>
+        <a style="background-color: purple;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=184&amp;px=20" onmouseover="onTileHovered(7, 10)"></a>
+        <a style="background-color: yellow;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=184&amp;px=20" onmouseover="onTileHovered(8, 10)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=184&amp;px=20" onmouseover="onTileHovered(9, 10)"></a>
+        <a style="background-color: purple;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=184&amp;px=20" onmouseover="onTileHovered(10, 10)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=184&amp;px=20" onmouseover="onTileHovered(11, 10)"></a>
+        <a style="background-color: yellow;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=184&amp;px=20" onmouseover="onTileHovered(12, 10)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=184&amp;px=20" onmouseover="onTileHovered(13, 10)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=184&amp;px=20" onmouseover="onTileHovered(14, 10)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=184&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=184&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=184&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=184&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 176px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=185&amp;px=20" onmouseover="onTileHovered(0, 11)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=185&amp;px=20" onmouseover="onTileHovered(1, 11)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=185&amp;px=20" onmouseover="onTileHovered(2, 11)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=185&amp;px=20" onmouseover="onTileHovered(3, 11)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=694&amp;cy=185&amp;px=20" onmouseover="onTileHovered(4, 11)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=695&amp;cy=185&amp;px=20" onmouseover="onTileHovered(5, 11)"></a>
+        <a style="background-color: purple;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=185&amp;px=20" onmouseover="onTileHovered(6, 11)"></a>
+        <a style="background-color: purple;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=185&amp;px=20" onmouseover="onTileHovered(7, 11)"></a>
+        <a style="background-color: brown;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=185&amp;px=20" onmouseover="onTileHovered(8, 11)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=185&amp;px=20" onmouseover="onTileHovered(9, 11)"></a>
+        <a style="background-color: purple;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=185&amp;px=20" onmouseover="onTileHovered(10, 11)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=185&amp;px=20" onmouseover="onTileHovered(11, 11)"></a>
+        <a style="background-color: purple;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=185&amp;px=20" onmouseover="onTileHovered(12, 11)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=185&amp;px=20" onmouseover="onTileHovered(13, 11)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=185&amp;px=20" onmouseover="onTileHovered(14, 11)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=185&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=185&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=185&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=185&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 192px;">
+        <a style="background-color: rgb(255, 255, 255);left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=186&amp;px=20" onmouseover="onTileHovered(0, 12)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=186&amp;px=20" onmouseover="onTileHovered(1, 12)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=186&amp;px=20" onmouseover="onTileHovered(2, 12)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=186&amp;px=20" onmouseover="onTileHovered(3, 12)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=186&amp;px=20" onmouseover="onTileHovered(4, 12)"></a>
+        <a style="background-color: yellow;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=186&amp;px=20" onmouseover="onTileHovered(5, 12)"></a>
+        <a style="background-color: white;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=186&amp;px=20" onmouseover="onTileHovered(6, 12)"></a>
+        <a style="background-color: white;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=186&amp;px=20" onmouseover="onTileHovered(7, 12)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=186&amp;px=20" onmouseover="onTileHovered(8, 12)"></a>
+        <a style="background-color: purple;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=186&amp;px=20" onmouseover="onTileHovered(9, 12)"></a>
+        <a style="background-color: purple;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=186&amp;px=20" onmouseover="onTileHovered(10, 12)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=186&amp;px=20" onmouseover="onTileHovered(11, 12)"></a>
+        <a style="background-color: purple;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=186&amp;px=20" onmouseover="onTileHovered(12, 12)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=186&amp;px=20" onmouseover="onTileHovered(13, 12)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=186&amp;px=20" onmouseover="onTileHovered(14, 12)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=186&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=186&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=186&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=186&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 208px;">
+        <a style="background-color: yellow;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=187&amp;px=20" onmouseover="onTileHovered(0, 13)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=187&amp;px=20" onmouseover="onTileHovered(1, 13)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=187&amp;px=20" onmouseover="onTileHovered(2, 13)"></a>
+        <a style="background-color: rgb(185, 0, 185);left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=187&amp;px=20" onmouseover="onTileHovered(3, 13)"></a>
+        <a style="background-color: white;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=187&amp;px=20" onmouseover="onTileHovered(4, 13)"></a>
+        <a style="background-color: white;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=187&amp;px=20" onmouseover="onTileHovered(5, 13)"></a>
+        <a style="background-color: white;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=187&amp;px=20" onmouseover="onTileHovered(6, 13)"></a>
+        <a style="background-color: white;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=187&amp;px=20" onmouseover="onTileHovered(7, 13)"></a>
+        <a style="background-color: yellow;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=187&amp;px=20" onmouseover="onTileHovered(8, 13)"></a>
+        <a style="background-color: yellow;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=187&amp;px=20" onmouseover="onTileHovered(9, 13)"></a>
+        <a style="background-color: purple;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=187&amp;px=20" onmouseover="onTileHovered(10, 13)"></a>
+        <a style="background-color: purple;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=187&amp;px=20" onmouseover="onTileHovered(11, 13)"></a>
+        <a style="background-color: purple;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=187&amp;px=20" onmouseover="onTileHovered(12, 13)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=187&amp;px=20" onmouseover="onTileHovered(13, 13)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=187&amp;px=20" onmouseover="onTileHovered(14, 13)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=187&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=187&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=187&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=187&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 224px;">
+        <a style="background-color: yellow;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=188&amp;px=20" onmouseover="onTileHovered(0, 14)"></a>
+        <a style="background-color: yellow;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=188&amp;px=20" onmouseover="onTileHovered(1, 14)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=188&amp;px=20" onmouseover="onTileHovered(2, 14)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=188&amp;px=20" onmouseover="onTileHovered(3, 14)"></a>
+        <a style="background-color: white;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=188&amp;px=20" onmouseover="onTileHovered(4, 14)"></a>
+        <a style="background-color: white;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=188&amp;px=20" onmouseover="onTileHovered(5, 14)"></a>
+        <a style="background-color: white;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=188&amp;px=20" onmouseover="onTileHovered(6, 14)"></a>
+        <a style="background-color: white;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=188&amp;px=20" onmouseover="onTileHovered(7, 14)"></a>
+        <a style="background-color: white;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=188&amp;px=20" onmouseover="onTileHovered(8, 14)"></a>
+        <a style="background-color: yellow;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=188&amp;px=20" onmouseover="onTileHovered(9, 14)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=188&amp;px=20" onmouseover="onTileHovered(10, 14)"></a>
+        <a style="background-color: yellow;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=188&amp;px=20" onmouseover="onTileHovered(11, 14)"></a>
+        <a style="background-color: yellow;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=188&amp;px=20" onmouseover="onTileHovered(12, 14)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=188&amp;px=20" onmouseover="onTileHovered(13, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=188&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=188&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=188&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=188&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=188&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 240px;">
+        <a style="background-color: yellow;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=189&amp;px=20" onmouseover="onTileHovered(0, 14)"></a>
+        <a style="background-color: yellow;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=189&amp;px=20" onmouseover="onTileHovered(1, 14)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=189&amp;px=20" onmouseover="onTileHovered(2, 14)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=189&amp;px=20" onmouseover="onTileHovered(3, 14)"></a>
+        <a style="background-color: white;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=189&amp;px=20" onmouseover="onTileHovered(4, 14)"></a>
+        <a style="background-color: white;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=189&amp;px=20" onmouseover="onTileHovered(5, 14)"></a>
+        <a style="background-color: white;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=189&amp;px=20" onmouseover="onTileHovered(6, 14)"></a>
+        <a style="background-color: white;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=189&amp;px=20" onmouseover="onTileHovered(7, 14)"></a>
+        <a style="background-color: white;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=189&amp;px=20" onmouseover="onTileHovered(8, 14)"></a>
+        <a style="background-color: yellow;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=189&amp;px=20" onmouseover="onTileHovered(9, 14)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=189&amp;px=20" onmouseover="onTileHovered(10, 14)"></a>
+        <a style="background-color: yellow;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=189&amp;px=20" onmouseover="onTileHovered(11, 14)"></a>
+        <a style="background-color: yellow;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=189&amp;px=20" onmouseover="onTileHovered(12, 14)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=189&amp;px=20" onmouseover="onTileHovered(13, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=189&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+         <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=189&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=189&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=189&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=189&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+    </div>
+    <div class="row" , style="top: 240px;">
+        <a style="background-color: yellow;left: 0px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=960&amp;cy=190&amp;px=20" onmouseover="onTileHovered(0, 14)"></a>
+        <a style="background-color: yellow;left: 16px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=961&amp;cy=190&amp;px=20" onmouseover="onTileHovered(1, 14)"></a>
+        <a style="background-color: white;left: 32px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=962&amp;cy=190&amp;px=20" onmouseover="onTileHovered(2, 14)"></a>
+        <a style="background-color: white;left: 48px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=963&amp;cy=190&amp;px=20" onmouseover="onTileHovered(3, 14)"></a>
+        <a style="background-color: white;left: 64px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=964&amp;cy=190&amp;px=20" onmouseover="onTileHovered(4, 14)"></a>
+        <a style="background-color: white;left: 80px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=965&amp;cy=190&amp;px=20" onmouseover="onTileHovered(5, 14)"></a>
+        <a style="background-color: white;left: 96px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=966&amp;cy=190&amp;px=20" onmouseover="onTileHovered(6, 14)"></a>
+        <a style="background-color: white;left: 112px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=967&amp;cy=190&amp;px=20" onmouseover="onTileHovered(7, 14)"></a>
+        <a style="background-color: white;left: 128px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=968&amp;cy=190&amp;px=20" onmouseover="onTileHovered(8, 14)"></a>
+        <a style="background-color: yellow;left: 144px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=969&amp;cy=190&amp;px=20" onmouseover="onTileHovered(9, 14)"></a>
+        <a style="background-color: white;left: 160px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=970&amp;cy=190&amp;px=20" onmouseover="onTileHovered(10, 14)"></a>
+        <a style="background-color: yellow;left: 176px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=971&amp;cy=190&amp;px=20" onmouseover="onTileHovered(11, 14)"></a>
+        <a style="background-color: yellow;left: 192px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=972&amp;cy=190&amp;px=20" onmouseover="onTileHovered(12, 14)"></a>
+        <a style="background-color: yellow;left: 208px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=973&amp;cy=190&amp;px=20" onmouseover="onTileHovered(13, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=974&amp;cy=190&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=975&amp;cy=190&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=976&amp;cy=190&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=977&amp;cy=190&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+        <a style="background-color: rgb(255, 255, 255);left: 224px;" class="square"
+            href="https://new.reddit.com/r/place/?cx=978&amp;cy=190&amp;px=20" onmouseover="onTileHovered(14, 14)"></a>
+
+    </div>
+
+</body>
+
+</html>
